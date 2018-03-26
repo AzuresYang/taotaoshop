@@ -1,0 +1,42 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+
+	http://www.springframework.org/schema/util
+	http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+
+    <!-- 事务管理器 -->
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!-- 数据源 -->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!-- 通知 -->  <!-- 传播行为
+    <ts:advice id="txAdvice" transaction-manager="transactionManager">
+        <ts:attributes>
+
+            <ts:method name="save*" propagation="REQUIRED" />
+            <ts:method name="insert*" propagation="REQUIRED" />
+            <ts:method name="add*" propagation="REQUIRED" />
+            <ts:method name="create*" propagation="REQUIRED" />
+            <ts:method name="delete*" propagation="REQUIRED" />
+            <ts:method name="update*" propagation="REQUIRED" />
+            <ts:method name="find*" propagation="SUPPORTS" read-only="true" />
+            <ts:method name="select*" propagation="SUPPORTS" read-only="true" />
+            <ts:method name="get*" propagation="SUPPORTS" read-only="true" />
+        </ts:attributes>
+    </ts:advice>-->
+    <!-- 切面
+    <aop:config>
+        <aop:advisor advice-ref="txAdvice"
+                     pointcut="execution(* com.tao.service.*.*(..))" />
+    </aop:config>-->
+</beans>
