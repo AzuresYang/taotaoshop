@@ -1,15 +1,18 @@
 package com.tao.entity;
 
+import com.tao.utils.JsonUtils;
+
 /**
  * Created by 28029 on 2018/3/26.
  */
 public class ResponseResult {
     int status;
     String msg;
-    String data;
+     Object data;
 
 
-    ResponseResult(int status, String msg, String data)
+    public ResponseResult(){};
+    ResponseResult(int status, String msg, Object data)
     {
         this.status = status;
         this.msg = msg;
@@ -17,9 +20,13 @@ public class ResponseResult {
 
     }
 
-    public static ResponseResult ok(String data)
+    public static ResponseResult ok(Object obj)
     {
-        return new ResponseResult(200,"ok",data);
+        return new ResponseResult(200,"ok", obj);
+    }
+    public static ResponseResult ok()
+    {
+        return new ResponseResult(200,"ok",null);
     }
 
     public int getStatus() {
@@ -38,11 +45,11 @@ public class ResponseResult {
         this.msg = msg;
     }
 
-    public String getData() {
+    public Object getData() {
         return data;
     }
 
-    public void setData(String data) {
+    public void setData(Object data) {
         this.data = data;
     }
 }

@@ -44,6 +44,7 @@
 	            </td>
 	        </tr>
 	    </table>
+
 	</form>
 	<div style="padding:5px">
 	    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="contentAddPage.submitForm()">提交</a>

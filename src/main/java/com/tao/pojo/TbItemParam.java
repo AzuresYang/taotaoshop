@@ -12,7 +12,6 @@ public class TbItemParam {
     private Date updated;
 
     private String paramData;
-
     public TbItemParam(Long id, Long itemCatId, Date created, Date updated, String paramData) {
         this.id = id;
         this.itemCatId = itemCatId;

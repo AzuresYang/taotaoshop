@@ -15,11 +15,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * Created by 28029 on 2018/3/23.
  */
 @Controller
-@RequestMapping("/item")
+@RequestMapping()
 public class ItemController {
     @Autowired
     ItemService itemService;
-    @RequestMapping("/list")
+    @RequestMapping("/item/list")
     //设置相应的内容为json数据
     @ResponseBody
     public EasyUIResult getItemlist(@RequestParam(defaultValue="1")Integer page,
@@ -30,11 +30,11 @@ public class ItemController {
         return result;
     }
 
-    @RequestMapping(value = "/save",method = RequestMethod.POST)
+    @RequestMapping(value = "/item/save",method = RequestMethod.POST)
     @ResponseBody
-    private ResponseResult saveItem(TbItem item)
+    private ResponseResult saveItem(TbItem item,String desc, String itemParams)
     {
-        ResponseResult result = itemService.createItem(item);
+        ResponseResult result = itemService.createItem(item,desc,itemParams);
         return result;
     }
 
