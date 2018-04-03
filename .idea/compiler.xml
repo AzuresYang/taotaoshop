@@ -6,10 +6,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="web-rest" />
+        <module name="taotao-common" />
+        <module name="taotao-manager-mapper (1)" />
+        <module name="taotao-mananger-pojo" />
+        <module name="taotao-mananger-service" />
+        <module name="taotao-mgr-mapper" />
+        <module name="taotao-mgr-web" />
+        <module name="taotao-protal" />
+        <module name="taotao-restful" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="taotao-common" target="1.8" />
+      <module name="taotao-manager" target="1.8" />
+      <module name="taotao-manager-mapper" target="1.8" />
+      <module name="taotao-manager-mapper (1)" target="1.8" />
+      <module name="taotao-manager-pojo" target="1.8" />
+      <module name="taotao-manager-web" target="1.8" />
+      <module name="taotao-mananger-pojo" target="1.8" />
+      <module name="taotao-mananger-service" target="1.8" />
+      <module name="taotao-mgr-mapper" target="1.8" />
+      <module name="taotao-mgr-service" target="1.8" />
+      <module name="taotao-mgr-web" target="1.8" />
+      <module name="taotao-protal" target="1.8" />
+      <module name="taotao-rest" target="1.8" />
+      <module name="taotao-restful" target="1.8" />
+      <module name="taotaomanager" target="1.8" />
       <module name="taotaoshop" target="1.8" />
       <module name="web-rest" target="1.8" />
     </bytecodeTargetLevel>

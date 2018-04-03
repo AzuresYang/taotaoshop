@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/taotao-common/taotao-common.iml" filepath="$PROJECT_DIR$/taotao-common/taotao-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotao-manager/taotao-manager.iml" filepath="$PROJECT_DIR$/taotao-manager/taotao-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotao-manager/taotao-manager-pojo.iml" filepath="$PROJECT_DIR$/taotao-manager/taotao-manager-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotao-mananger-pojo/taotao-mananger-pojo.iml" filepath="$PROJECT_DIR$/taotao-mananger-pojo/taotao-mananger-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotao-mananger-service/taotao-mananger-service.iml" filepath="$PROJECT_DIR$/taotao-mananger-service/taotao-mananger-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotao-mgr-mapper/taotao-mgr-mapper.iml" filepath="$PROJECT_DIR$/taotao-mgr-mapper/taotao-mgr-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotao-mgr-web/taotao-mgr-web.iml" filepath="$PROJECT_DIR$/taotao-mgr-web/taotao-mgr-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotao-protal/taotao-protal.iml" filepath="$PROJECT_DIR$/taotao-protal/taotao-protal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotao-restful/taotao-restful.iml" filepath="$PROJECT_DIR$/taotao-restful/taotao-restful.iml" />
       <module fileurl="file://$PROJECT_DIR$/taotaoshop.iml" filepath="$PROJECT_DIR$/taotaoshop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/web-rest/web-rest.iml" filepath="$PROJECT_DIR$/web-rest/web-rest.iml" />
     </modules>
   </component>
 </project>

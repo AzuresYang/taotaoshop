@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="taotao-mgr-service:war exploded">
+    <output-path>$PROJECT_DIR$/taotao-mgr-service/target/taotao-mgr-service</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="taotao-mgr-service" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="taotao-common-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="taotao-common" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/taotao-mgr-service/target/taotao-mgr-service/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="taotao-mgr-service/web/Web" />
+    </root>
+  </artifact>
+</component>
