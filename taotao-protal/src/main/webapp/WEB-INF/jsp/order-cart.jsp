@@ -2,6 +2,7 @@
 <%@ page trimDirectiveWhitespaces="true" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page isELIgnored="false" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
@@ -31,14 +32,14 @@
 <form id="orderForm" class="hide" action="/order/create.html" method="post">
 		<input type="hidden" name="paymentType" value="1"/>
 		<c:forEach items="${cartList }" var="cart" varStatus="status">
-			<c:set var="totalPrice"  value="${ totalPrice + (cart.price * cart.num)}"/>
-			<input type="hidden" name="orderItems[${status.index}].itemId" value="${cart.id}"/>
-			<input type="hidden" name="orderItems[${status.index}].num" value="${cart.num }"/>
-			<input type="hidden" name="orderItems[${status.index}].price" value="${cart.price}"/>
-			<input type="hidden" name="orderItems[${status.index}].totalFee" value="${cart.price * cart.num}"/>
-			<input type="hidden" name="orderItems[${status.index}].title" value="${cart.title}"/>
-			<input type="hidden" name="orderItems[${status.index}].picPath" value="${cart.images[0]}"/>
-		</c:forEach>
+	<c:set var="totalPrice"  value="${ totalPrice + (cart.price * cart.num)}"/>
+	<input type="hidden" name="orderItems[${status.index}].itemId" value="${cart.id}"/>
+	<input type="hidden" name="orderItems[${status.index}].num" value="${cart.num }"/>
+	<input type="hidden" name="orderItems[${status.index}].price" value="${cart.price}"/>
+	<input type="hidden" name="orderItems[${status.index}].totalFee" value="${cart.price * cart.num}"/>
+	<input type="hidden" name="orderItems[${status.index}].title" value="${cart.title}"/>
+	<input type="hidden" name="orderItems[${status.index}].picPath" value="${cart.image}"/>
+</c:forEach>
 		<input type="hidden" name="payment" value="<fmt:formatNumber groupingUsed="false" maxFractionDigits="2" minFractionDigits="2" value="${totalPrice/100 }"/>"/>
 		<input type="hidden" name="orderShipping.receiverName" value="入云龙"/>
 		<input type="hidden" name="orderShipping.receiverMobile" value="15891588888"/>
@@ -188,7 +189,7 @@
 
 			<div class="p-img">
 				<a target="_blank" href="/item/${cart.id}.html">
-					<img src="${cart.images[0]}" alt="">
+					<img src="${cart.image}" alt="">
 				</a>
 			</div>
 			<div class="goods-msg">

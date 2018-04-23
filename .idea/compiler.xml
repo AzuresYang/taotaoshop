@@ -12,8 +12,11 @@
         <module name="taotao-mananger-service" />
         <module name="taotao-mgr-mapper" />
         <module name="taotao-mgr-web" />
+        <module name="taotao-order" />
         <module name="taotao-protal" />
         <module name="taotao-restful" />
+        <module name="taotao-search" />
+        <module name="taotao-so" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,9 +31,13 @@
       <module name="taotao-mgr-mapper" target="1.8" />
       <module name="taotao-mgr-service" target="1.8" />
       <module name="taotao-mgr-web" target="1.8" />
+      <module name="taotao-order" target="1.8" />
       <module name="taotao-protal" target="1.8" />
       <module name="taotao-rest" target="1.8" />
       <module name="taotao-restful" target="1.8" />
+      <module name="taotao-search" target="1.8" />
+      <module name="taotao-so" target="1.8" />
+      <module name="taotao-sso" target="1.8" />
       <module name="taotaomanager" target="1.8" />
       <module name="taotaoshop" target="1.8" />
       <module name="web-rest" target="1.8" />

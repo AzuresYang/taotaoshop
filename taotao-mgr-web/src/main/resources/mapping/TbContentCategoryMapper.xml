@@ -105,14 +105,21 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.tao.pojo.TbContentCategory" >
+    <selectKey resultType="long" keyProperty="id" order="AFTER">
+      select LAST_INSERT_ID() as value
+    </selectKey>
     insert into tb_content_category (id, parent_id, name, 
       status, sort_order, is_parent, 
       created, updated)
+
     values (#{id,jdbcType=BIGINT}, #{parentId,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, 
       #{status,jdbcType=INTEGER}, #{sortOrder,jdbcType=INTEGER}, #{isParent,jdbcType=BIT}, 
       #{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.tao.pojo.TbContentCategory" >
+    <selectKey resultType="long" keyProperty="id" order="AFTER">
+      select LAST_INSERT_ID() as value
+    </selectKey>
     insert into tb_content_category
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >

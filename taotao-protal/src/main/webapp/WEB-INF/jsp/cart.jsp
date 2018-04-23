@@ -2,6 +2,7 @@
 <%@ page trimDirectiveWhitespaces="true" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page isELIgnored="false" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
    <meta http-equiv="pragma" content="no-cache">
@@ -62,12 +63,12 @@
 		            <div class="cell p-checkbox"><input data-bind="cbid:1" class="checkbox" type="checkbox" name="checkItem" checked="" value="11345721-1"></div>
 		            <div class="cell p-goods">
 		                <div class="p-img">
-		                	<a href="/item/${cart.id }.html" target="_blank">
-		                		<img clstag="clickcart|keycount|xincart|p-imglistcart" src="${cart.images[0]}" alt="${cart.title}" width="52" height="52">
+		                	<a href="/item/${cart.id}.html" target="_blank">
+		                		<img clstag="clickcart|keycount|xincart|p-imglistcart" src="${cart.image}" alt="${cart.title}" width="52" height="52">
 		                	</a>
 		                </div>    
 		                <div class="p-name">
-		                	<a href="/item/${cart.id }.html" clstag="clickcart|keycount|xincart|productnamelink" target="_blank">${cart.title}</a>
+		                	<a href="/item/${cart.id}.html" clstag="clickcart|keycount|xincart|productnamelink" target="_blank">${cart.title}</a>
 		                	<span class="promise411 promise411_11345721" id="promise411_11345721"></span>
 		                </div>    
 		            </div>

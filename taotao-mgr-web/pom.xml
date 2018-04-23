@@ -213,6 +213,21 @@
 
     <build>
         <finalName>taotao-mgr-web</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <port>8081</port>
+                    <path>/</path>
+                    <server>tomcat7</server>
+                    <url>http://193.112.68.221:8081/manager/text</url>
+                    <username>admin</username>
+                    <password>password</password>
+                </configuration>
+            </plugin>
+        </plugins>
+
         <resources>
             <resource>
                 <directory>src/main/java</directory>

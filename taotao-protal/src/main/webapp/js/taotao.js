@@ -5,7 +5,7 @@ var TT = TAOTAO = {
 			return ;
 		}
 		$.ajax({
-			url : "http://localhost:8084/user/token/" + _ticket,
+			url : "http://193.112.68.221:8085/user/token/" + _ticket,
 			dataType : "jsonp",
 			type : "GET",
 			success : function(data){

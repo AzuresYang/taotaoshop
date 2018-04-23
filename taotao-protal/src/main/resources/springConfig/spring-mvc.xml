@@ -42,4 +42,12 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <!--拦截器配置-->  <!--拦截订单类的请求-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+
+            <mvc:mapping path="/order/**"/>
+            <bean class="com.tao.protal.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>

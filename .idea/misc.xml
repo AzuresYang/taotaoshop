@@ -17,7 +17,9 @@
         <option value="$PROJECT_DIR$/taotao-manager/pom.xml" />
         <option value="$PROJECT_DIR$/taotao-mgr-service/pom.xml" />
         <option value="$PROJECT_DIR$/taotao-rest/pom.xml" />
+        <option value="$PROJECT_DIR$/taotao-sso/pom.xml" />
         <option value="$PROJECT_DIR$/taotaomanager/pom.xml" />
+        <option value="$PROJECT_DIR$/taotest/pom.xml" />
         <option value="$PROJECT_DIR$/web-rest/pom.xml" />
       </set>
     </option>

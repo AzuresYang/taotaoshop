@@ -3,9 +3,14 @@ package com.tao.rest.service;
 import com.tao.rest.pojo.CatResult;
 import com.tao.rest.service.base.ItemCatService;
 import com.tao.utils.JsonUtils;
+import org.apache.solr.client.solrj.SolrServerException;
+import org.apache.solr.client.solrj.impl.HttpSolrServer;
+import org.apache.solr.common.SolrInputDocument;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.io.IOException;
 
 import static org.junit.Assert.*;
 
@@ -25,5 +30,6 @@ public class ItemCatServiceImplTest {
         String result= JsonUtils.objectToJson(catResult);
         System.out.println(result);
     }
+
 
 }

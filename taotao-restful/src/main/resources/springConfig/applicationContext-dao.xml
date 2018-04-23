@@ -26,7 +26,7 @@
         <!-- 初始化连接大小 -->
         <property name="initialSize" value="${jdbc.initialSize}"></property>
         <!-- 连接池最大数量 -->
-        <property name="maxActive" value="${jdbc.maxActive}"></property>
+        <property name="maxActive" value="${jdbc.maxWait}"></property>
         <!-- 连接池最大空闲 -->
         <property name="maxIdle" value="${jdbc.maxIdle}"></property>
         <!-- 连接池最小空闲 -->
